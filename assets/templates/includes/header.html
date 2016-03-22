@@ -1,0 +1,74 @@
+	<header role="banner" id="global-header" class="with-proposition">
+		<div class="header-wrapper">
+	  	<div class="header-global">
+	    	<!--<div class="header-logo">
+	      	<a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
+	        	<img src="govuk-assets/images/gov.uk_logotype_crown.png?0.12.0" width="35" height="31" alt=""> GOV.UK
+	        </a>
+	      </div> [REMOVED FOR GDS]-->
+	    </div>
+			<div class="header-proposition">
+				<div class="content">
+					<nav id="proposition-menu">
+						<a href="/" id="proposition-name">
+							Digital Inclusion Plotter
+						</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--end header-->
+	<div id="global-header-bar">
+	  <div class="inner-block">
+	    <div class="header-bar"></div>
+	  </div>
+	</div>
+	<!--end global-header-bar-->
+
+
+<div class="hoodie-accountbar">
+	<div class="hoodie-account-signedout">
+		<span class="btn-group">
+			<button class="btn btn-small btn-primary" data-hoodie-action="signin">Sign In</button>
+			<button class="btn btn-small dropdown-toggle btn-primary" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu pull-right">
+				<li><a href="#" data-hoodie-action="signup">Sign Up</a></li>
+				<li><a href="#" data-hoodie-action="resetpassword">Reset Password</a></li>
+				<li><a href="#" data-hoodie-action="destroy">Clear local data</a></li>
+			</ul>
+		</span>
+	</div><!-- end hoodie-account-signedout -->
+
+	<div class="hoodie-account-signedin">
+		Hello,
+		<span class="hoodie-username"><!-- username will be filled in here --></span>
+		<span class="btn-group">
+			<button class="btn btn-small btn-primary" data-hoodie-action="signout">Sign Out</button>
+			<button class="btn btn-small dropdown-toggle btn-primary" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu pull-right">
+				<li><a href="#" data-hoodie-action="changepassword">Change Password</a></li>
+				<li><a href="#" data-hoodie-action="changeusername">Change Username</a></li>
+				<li><a href="#" data-hoodie-action="destroy">Destroy Account</a></li>
+			</ul>
+		</span>		
+	</div><!-- end hoodie-account-signedin -->
+
+	<div class="hoodie-account-error">
+		Hello,
+		<span class="hoodie-username"><!-- username will be filled in here --></span>.
+		<span class="btn-group">
+			<button class="btn btn-small btn-danger" data-hoodie-action="signin">Authentication error: Sign in again</button>
+			<button class="btn btn-small dropdown-toggle btn-danger" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu pull-right">
+				<li><a href="#" data-hoodie-action="signout">Sign out</a></li>
+			</ul>
+		</span>
+	</div><!-- end hoodie-account-error -->
+</div><!-- end hoodieAccountBar -->

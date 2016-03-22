@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Digital Inclusion Plotter</title>
+		<meta name="author" content="Ben Walker"/>
+		<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+
+		<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+		
+
+		<link href="assets/govuk/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" />
+		<link href="assets/govuk/application.css" media="all" rel="stylesheet" type="text/css" />
+		{{stylesheets}}
+		<link href="assets/css/main.css" rel="stylesheet">
+
+
+		<script type="text/javascript" src="assets/vendor/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/bootstrap/bootstrap.js"></script>
+		<!-- Load the dynamic version of hoodie.js that includes all the plugin code-->
+		<script type="text/javascript" src="/_api/_files/hoodie.js"></script>
+
+		<script type="text/javascript" src="assets/vendor/hoodie.accountbar.bootstrap.js"></script>
+		<script type="text/javascript" src="assets/vendor/bootstrap.modalform.js"></script>
+
+		{{scripts}}
+		<script type="text/javascript" src="assets/js/form.storage.js"></script>
+		<script type="text/javascript" src="assets/js/details.polyfill.js"></script>
+
+		<!--Controller-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+
+	</head>
+	<body>
+		{{header}}
+		<main id="content" role="main">
+			{{banner}}<div data-includefile="banner-alpha"></div>
+			{{body}}
+			<h1 class="heading-xlarge" style="margin-bottom: 40px">Digital Inclusion Plotter</h1>
+
+			<p><a class="button navigation" navType="newSession" nextPage="Metadata">Start a new project</a></p>
+			<p>Or choose a existing project CSV file to import (<10Mb)</br>
+			<input type="file" id="fileImport" name="fileImport"/></p>
+
+			<p>If you need help documentation is <a href="https://docs.google.com/document/d/1PTt_RjT8UKAkpoWZKRggQ6uBL0yjYX5Anq_NZjEUfrw/edit?usp=sharing" target="_blank">available here</a>.</p>
+			<div id="overlay" aria-hidden="true" style="display: none;">
+			<span>Processing file. Please wait...</span>
+			</div>
+		</main>
+		{{footer}}
+		<footer data-includefile="footer"></footer>
+	</body>
+</html>
