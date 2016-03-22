@@ -1,0 +1,2 @@
+# digital-inclusion-plotter
+Simple tool to provide HOD User Researchers with a toolkit to aid them in plotting research participants on the Digital Inclusion Scale with accuracy. To that end the toolkit will be automating the coding process and it is intended that over a number of itteration the accuracy of this coding process can be improved. This toolkit is designed to fucntion without an internet connection for in the field research sessions.  Created internally at Home Office Digital
