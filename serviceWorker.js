@@ -4,9 +4,9 @@
 	/*---- START UP ----*/
 
 	// Load the sw-toolbox library.
-	importScripts('assets/vendor/sw-toolbox/sw-toolbox.js');
+	importScripts('/assets/vendor/sw-toolbox/sw-toolbox.js');
 	importScripts('/_api/_files/hoodie.js');
-	importScripts('assets/vendor/mustache.min.js');
+	importScripts('/assets/vendor/mustache.min.js');
 
 	// Ensure that the service worker takes control of the page ASAP.
 	global.addEventListener('install', event => event.waitUntil(global.skipWaiting()));
@@ -14,12 +14,12 @@
 
 	//Get templates
 	var hoodie = new hoodie();
-	hoodie.account.signIn('Template_Engine', 'hri48£haui#wr89y324b7y82bnbasgc7wbqek8erbsb7w')
+	/*hoodie.account.signIn('Template_Engine', 'hri48£haui#wr89y324b7y82bnbasgc7wbqek8erbsb7w')
 		.done(window.alert('Login'))
 		.fail(window.alert('Fail login'));
 	var templates = hoodie.store.findAll('templates');
 	var doc = {id:'request', template:"Handled a request for {{url}}, where foo is  {{foo}}"};
-	hoodie.store.add('templates', ).publish().then();
+	hoodie.store.add('templates', ).publish().then();*/
 
 
 	/*---- ROUTING ----*/
@@ -30,7 +30,7 @@
 	});
 
 	function templateEngine(template, request, values){
-		//"Handled a request for {{url}}, where foo is  {{foo}}";
+		var template = "Handled a request for {{url}}, where foo is  {{foo}}";
 		//Mustache.parse(template);   // optional, speeds up future uses
 		return Mustache.render(template, {foo: values.foo, url:request.url});
 	}
